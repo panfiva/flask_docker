@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  node_server:
+    restart: always
+    build:
+      context: ./
+    ports:
+      - "5001:5001"
+    container_name: flask_docker
+    image: flask_docker
+  nginx:
+    restart: always
+    build:
+      context: ./nginx
+    ports:
+      - "5000:5000"

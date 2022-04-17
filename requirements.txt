@@ -1,0 +1,4 @@
+Flask
+jwt
+requests
+flask-cors
